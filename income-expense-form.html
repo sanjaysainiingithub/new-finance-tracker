@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./CSS/form.css">
+  <title>Form</title>
+</head>
+<body>
+  <div class="container">
+    <div id="header">
+      <h1>Income Expense Form</h1>
+    </div>
+    <div class="home-a">
+      <a href="index.html">Home</a>
+    </div>
+    <div class="row">
+      <div class="col-5">
+        <div>
+          <label>Select Category</label><br>
+          <label for="income">Income</label>
+          <input type="radio" name="category" id="income">&nbsp;&nbsp;&nbsp;&nbsp;
+          <label for="expense">Expense</label>
+          <input type="radio" name="category" id="expense">
+        </div>
+        <div>
+          <select class="input-field" id="category">
+            
+          </select>
+        </div>
+        <div class="mt-3">
+          <label for="desc">Description</label>
+          <textarea name="desc" id="desc" cols="80" rows="2"  placeholder="type description..."></textarea>
+        </div>
+
+        <div class="mt-3">
+          <label for="amount">Amount</label><br>
+          <input type="text" placeholder="type amount..." class="input-field" id="amount">
+        </div>
+
+        <div class="mt-3">
+          <label for="date">Date</label><br>
+          <input type="date"  class="input-field" id="date">
+        </div>
+
+        <div class="mt-3">
+          <label for="date">Mode of Payment</label><br>
+          <select class="input-field" id="mode">
+            <option value="1">Cash</option>
+            <option value="2">Paytm</option>
+            <option value="3">PhonePe</option>
+            <option value="4">Google pay</option>
+            <option value="5">Debit Card</option>
+            <option value="6">Credit card</option>
+          </select>
+        </div>
+
+        <div class="mt-4">
+          <button class="btn btn-primary" id="add">Add</button>
+          <button class="btn btn-danger" id="delete">Delete</button>
+          <button class="btn btn-success" id="update">Update</button>
+          <button class="btn btn-secondary" id="save">Save</button>
+        </div>
+        
+      </div>
+
+      <div class="col-7">
+        <h2>Transaction : <span id="total-trans"></span></h2>
+        <h2>Marked  : <span id="marked-trans"></span></h2>
+        <h2>Unmarked  : <span id="unmarked-trans"></span></h2>
+        <table class="table text-center table-bordered">
+          <thead>
+            <th>ID</th>
+            <th>Category</th>
+            <th>Description</th>
+            <th>Amount</th>
+            <th>Date</th>
+            <th>Mode</th>
+            <th>Operation</th>
+          </thead>
+          <tbody id="tbody">
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script src="./script/form/controller/form-controller.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+html,body{
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+.wrapper{
+  height: 60%;
+  padding: 50px;
+  border-radius: 10px;
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  background-color: transparent;
+  color: #ff004f;
+  border: 2px solid #ff004f;
+}
+.wrapper h2{
+  text-align: center;
+}
+
+#userEmail,#userPassword{
+  height: 40px;
+  width: 90%;
+  border-radius: 8px;
+  border: 1px solid #ff004f;
+  outline: none;
+  background-color: transparent;
+  color: #ff004f;
+  font-size: 16px;
+  padding: 0px 8px;
+}
+
+#btn{
+  height: 50px;
+  width: 80px;
+  margin: 30px calc(65% - 100px);
+  border: none;
+  outline: none;
+  color: #ff004f;
+  font-size: 500;
+  background-color: transparent;
+  box-shadow: 2px 2px 1px #ff004f,-2px -2px 1px #ff004f;
+  font-size: 20px;
+  border-radius: 10px;
+}
